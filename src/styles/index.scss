@@ -40,4 +40,7 @@
     p {
         @apply py-2;
     }
+    a {
+        @apply hover:text-pink-400 underline;
+    }
 }
