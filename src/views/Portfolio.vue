@@ -20,7 +20,7 @@
 import { computed, defineComponent, onMounted, ref } from "vue"
 import Typewriter from "/@/components/view/Typewriter.vue"
 import DOMPurify from "dompurify"
-import marked from "marked"
+import { marked } from "marked"
 import Axios from "axios"
 import store from "/@/store"
 

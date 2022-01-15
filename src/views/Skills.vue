@@ -35,7 +35,7 @@
 import { defineComponent, computed, onMounted, ref } from "vue"
 import Axios from "axios"
 import store from "/@/store"
-import marked from "marked"
+import { marked } from "marked"
 import DOMPurify from "dompurify"
 import LoadingCircle from "/@/components/page/LoadingCircle.vue"
 import Button from "/@/components/inputs/Button.vue"
@@ -46,7 +46,11 @@ export default defineComponent({
     },
     setup() {
         const requested = ref(false)
-        const emails = ["cGF1bEBwYXVsLnN5c3RlbXM=", "YWdlbGxhaUBhc3UuZWR1", "cGF1bEBwYXVsZ2VsbGFpLmRldg=="]
+        const emails = [
+            "cGF1bEBwYXVsLnN5c3RlbXM=",
+            "YWdlbGxhaUBhc3UuZWR1",
+            "cGF1bEBwYXVsZ2VsbGFpLmRldg==",
+        ]
         const markdown = ref("")
         const content = computed(() => {
             const unsanitized = marked(markdown.value)
