@@ -1,7 +1,7 @@
 <template>
     <router-link
         v-if="link"
-        class="text-base mr-4 block px-2 py-1 hover:text-white"
+        class="text-base mr-4 block px-2 py-1 hover:text-white no-underline"
         :class="$route.path === link ? 'text-white' : 'text-gray-200'"
         :to="link"
     >
