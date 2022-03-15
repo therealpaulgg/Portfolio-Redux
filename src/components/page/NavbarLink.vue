@@ -10,7 +10,7 @@
     <a
         v-else
         :href="href"
-        class="text-base text-gray-200 mr-4 block px-2 py-1 hover:text-white"
+        class="text-base text-gray-200 mr-4 block px-2 py-1 hover:text-white no-underline"
         ><slot
     /></a>
 </template>
